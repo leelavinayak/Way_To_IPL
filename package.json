@@ -1,0 +1,17 @@
+{
+  "name": "ipl-travels",
+  "version": "1.0.0",
+  "description": "IPL Travels - Premium Bus Booking Platform",
+  "scripts": {
+    "server": "cd backend && node server.js",
+    "seed": "cd backend && node scripts/seed.js",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && node server.js",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
